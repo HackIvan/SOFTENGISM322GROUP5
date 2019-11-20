@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{#  <h2>Hello, {{ user.get_full_name }} <small>{{ user.username }}</small>!, How can I help you</h2>#}
+{#  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">#}
+{#  <div class="carousel-inner">#}
+{#    <div class="carousel-item active">#}
+{#      <img class="d-block w-100" src="https://v2api.netflights.com/media/16425/a380-sunset.jpg?center=0.444444444444444,0.627450980392157&mode=crop&width=864&height=564&rnd=131886623535870000&quality=60" alt="First slide">#}
+{#    <div class="carousel-caption d-none d-md-block">#}
+{#    <h5> <a  class="navbar-link" href="{% url 'login' %}">login</a> / <a  class="navbar-link" href="{% url 'signup' %}">signup</a></h5>#}
+{#    <p>Bus Reservation</p>#}
+{#  </div>#}
+
+
+
+{#    <div class="carousel-item">#}
+{#      <img class="d-block w-100" src="https://ei.marketwatch.com/Multimedia/2019/02/25/Photos/ZH/MW-HE536_airpla_20190225131547_ZH.jpg?uuid=5fa81d1a-3929-11e9-9462-ac162d7bc1f7" alt="Second slide">#}
+{#    <div class="carousel-caption d-none d-md-block">#}
+{#    <h5> <a  class="navbar-link" href="{% url 'login' %}">login</a> / <a  class="navbar-link" href="{% url 'signup' %}">signup</a></h5>#}
+{#    <p>Airline Group6</p>#}
+{#  </div>#}
+{#    </div>#}
+{#    <div class="carousel-item">#}
+{#      <img class="d-block w-100" src="http://www.traveller.com.au/content/dam/images/g/o/1/g/o/v/image.related.socialLead.620x349.go1ejv.png/1460083205883.jpg" alt="Third slide">#}
+{#    <div class="carousel-caption d-none d-md-block">#}
+{#    <h5> <a  class="navbar-link btn-outline-primary" href="{% url 'login' %}">login</a> / <a  class="navbar-link btn-outline-primary" href="{% url 'signup' %}">signup</a></h5>#}
+{#    <p>Airline Group6</p>#}
+{#  </div>#}
+{#    </div>#}
+{##}
+{#       <div class="carousel-item">#}
+{#      <img class="d-block w-100" src="https://www.indietraveller.co/wp-content/uploads/2015/08/one_way__large.jpg" alt="Fourth slide">#}
+{#    <div class="carousel-caption d-none d-md-block">#}
+{#    <h5> <a  class="navbar-link" href="{% url 'login' %}">login</a> / <a  class="navbar-link" href="{% url 'signup' %}">signup</a></h5>#}
+{#    <p>Airline Group6</p>#}
+{#  </div>#}
+{#    </div>#}
+{##}
+{#  </div>#}
+{#  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">#}
+{#    <span class="carousel-control-prev-icon" aria-hidden="true"></span>#}
+{#    <span class="sr-only">Previous</span>#}
+{#  </a>#}
+{#  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">#}
+{#    <span class="carousel-control-next-icon" aria-hidden="true"></span>#}
+{#    <span class="sr-only">Next</span>#}
+{#  </a>#}
+{#</div>#}
+
+
+
+
+
+    <link rel="stylesheet" href="https://www.infinite-sols.com/...DontTouch!/style.css">
+<link rel="stylesheet" href="https://www.infinite-sols.com/...DontTouch!/services.css">
+<script src="https://kit.fontawesome.com/3b5031a174.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+{#     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">#}
+{#        <div class="container">#}
+{#          <a class="navbar-brand" href="index.html">Bus Reservation</a>#}
+{#          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">#}
+{#                <span class="navbar-toggler-icon"></span>#}
+{#              </button>#}
+{#          <div class="collapse navbar-collapse" id="navbarResponsive">#}
+{#            <ul class="navbar-nav ml-auto">#}
+{#              <li class="nav-item active">#}
+{#                <a class="nav-link" href="#">Home#}
+{#                      <span class="sr-only">(current)</span>#}
+{#                    </a>#}
+{#              </li>#}
+{#              <li class="nav-item">#}
+{#                <a class="nav-link" href="#">About</a>#}
+{#              </li>#}
+{#              <li class="nav-item">#}
+{#                <a class="nav-link" href="#">Services</a>#}
+{#              </li>#}
+{#              <li class="nav-item">#}
+{#                <a class="nav-link" href="#">Contact</a>#}
+{#              </li>#}
+{#            </ul>#}
+{#          </div>#}
+{#        </div>#}
+{#      </nav>#}
+
+
+    <nav class="navbar navbar-default well-lg  well">
+
+<div class="navbar-header nav nav-tabs presentation active">
+
+      <a class="navbar-brand active" href="/">Home </a>
+    </div>
+
+<div class="navbar-header nav nav-tabs presentation well">
+
+      <a class="navbar-brand " href="/book/search_flight"> Search Routes</a>
+    </div>
+    <div class="navbar-header nav nav-tabs presentation">
+
+      <a class="navbar-brand" href="/book/view_book/"></a>
+    </div>
+{% if user.is_staff %}
+ <div class="navbar-header nav nav-tabs presentation">
+
+      <a class="navbar-brand" href="/book/view_all_book/">View Reservations </a>
+    </div>
+{% endif %}
+{#    <div class="navbar-header nav nav-tabs presentation">#}
+{#        {% if user.is_staff %}#}
+{##}
+{#      <a class="navbar-brand" href="/book/off_list/">Set Offer </a>#}
+{#        {% endif %}#}
+{##}
+{#    </div>#}
+
+{#{% if user.is_staff %}#}
+{# <div class="navbar-header nav nav-tabs presentation">#}
+{##}
+{#      <a class="navbar-brand" href="/admin">Admin Dashboard</a>#}
+{#    </div>#}
+{#{% endif %}#}
+
+
+{% if user.is_authenticated %}
+        <a  class="navbar-link" href="{% url 'logout' %}">sign in</a>
+
+    {% else %}
+        <a  class="navbar-link" href="{% url 'login' %}">signin</a> / <a  class="navbar-link" href="{% url 'signup' %}">signup</a>
+    {% endif %}
+    <hr>
+
+</nav>
+
+
+
+
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('http://www.infinite-sols.com/...DontTouch!/soft-eng/img/bus2.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Professional Drivers</h3>
+                <p class="lead">We provide Professional bus Service <br> for all your Transportations Needs</p>
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('http://www.infinite-sols.com/...DontTouch!/soft-eng/img/bus4.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Modern Buses</h3>
+                <p class="lead">Our Buses are all of first class standards<br> We do not take reparaing for granted</p>
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('http://www.infinite-sols.com/...DontTouch!/soft-eng/img/bus3.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3 class="display-4">Comfy Transportation</h3>
+                  <p class="lead">We provide Professional Service <br> for all your Transportations Needs</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+      </header>
+
+      <!-- Page Service Content section -->
+
+<div class="container">
+
+  <div class="row">
+
+      <div class="col-md-6 col-sm-6">
+
+          <div class="servicebox">
+
+              <div class="service-icon">
+
+                  <span><i class="fa fa-money-check"></i></span>
+
+              </div>
+
+              <h4 class="title">Cheap Routes</h4>
+
+
+              <p class="description">
+
+                  Our Bus Reservation and Booking sercice <br> are second to none because we care
+
+              </p>
+
+          </div>
+
+      </div>
+
+
+
+      <div class="col-md-6 col-sm-6">
+
+          <div class="servicebox">
+
+              <div class="service-icon">
+
+                  <span><i class="fa fa-heart"></i></span>
+
+              </div>
+
+               <h4 class="title">We Care</h4>
+
+              <p class="description">
+                 You can count on us for your safety,<br> We are a trusted partners
+
+              </p>
+
+          </div>
+
+      </div>
+
+
+
+
+
+
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,166 @@
+{% extends "base1.html" %}
+
+{% block content %}
+{% if user.is_authenticated %}
+         <meta http-equiv="refresh" content="0; url=http://127.0.0.1:8000/home/" />
+        {% endif %}
+
+
+
+    <link rel="stylesheet" href="https://www.infinite-sols.com/...DontTouch!/style.css">
+    <link rel="stylesheet" href="https://www.infinite-sols.com/...DontTouch!/services.css">
+
+    <script src="https://kit.fontawesome.com/3b5031a174.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+       <nav class="navbar navbar-default well-lg  well">
+
+<div class="navbar-header nav nav-tabs presentation active">
+
+      <a class="navbar-brand active" href="/">Home </a>
+    </div>
+
+<div class="navbar-header nav nav-tabs presentation well">
+
+      <a class="navbar-brand " href="/book/search_flight"> Search Routes</a>
+    </div>
+    <div class="navbar-header nav nav-tabs presentation">
+
+      <a class="navbar-brand" href="/book/view_book/"></a>
+    </div>
+{% if user.is_staff %}
+ <div class="navbar-header nav nav-tabs presentation">
+
+      <a class="navbar-brand" href="/book/view_all_book/">View Bookings </a>
+    </div>
+{% endif %}
+
+
+
+
+
+
+
+{% if user.is_authenticated %}
+        <a  class="navbar-link" href="{% url 'logout' %}">sign in</a>
+
+    {% else %}
+        <a  class="navbar-link" href="{% url 'login' %}">signin</a> / <a  class="navbar-link" href="{% url 'signup' %}">signup</a>
+    {% endif %}
+    <hr>
+
+</nav>
+
+
+
+
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('http://www.infinite-sols.com/...DontTouch!/soft-eng/img/bus2.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Professional Drivers</h3>
+                <p class="lead">We provide Professional bus Service <br> for all your Transportations Needs</p>
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('http://www.infinite-sols.com/...DontTouch!/soft-eng/img/bus4.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Modern Buses</h3>
+                <p class="lead">Our Buses are all of first class standards<br> We do not take reparaing for granted</p>
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('http://www.infinite-sols.com/...DontTouch!/soft-eng/img/bus3.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3 class="display-4">Comfy Transportation</h3>
+                  <p class="lead">We provide Professional Service <br> for all your Transportations Needs</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+      </header>
+
+      <!-- Page Service Content section -->
+
+<div class="container">
+
+  <div class="row">
+
+      <div class="col-md-6 col-sm-6">
+
+          <div class="servicebox">
+
+              <div class="service-icon">
+
+                  <span><i class="fa fa-money-check"></i></span>
+
+              </div>
+
+              <h4 class="title">Cheap Routes</h4>
+
+
+              <p class="description">
+
+                  Our Bus Reservation and Booking sercice <br> are second to none because we care
+
+              </p>
+
+          </div>
+
+      </div>
+
+
+
+      <div class="col-md-6 col-sm-6">
+
+          <div class="servicebox">
+
+              <div class="service-icon">
+
+                  <span><i class="fa fa-heart"></i></span>
+
+              </div>
+
+               <h4 class="title">We Care</h4>
+
+              <p class="description">
+                 You can count on us for your safety,<br> We are a trusted partners
+
+              </p>
+
+          </div>
+
+      </div>
+
+
+
+
+
+
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html>
+
+
+<link rel="stylesheet" href="https://www.infinite-sols.com/...DontTouch!/style.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+
+
+<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <style>
+        .bg-image{
+
+
+  background-image: url('http://www.infinite-sols.com/...DontTouch!/soft-eng/img/bus9.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+        </style>
+<title>Bus Reservation</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row no-gutter">
+          <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image" >
+            <!-- <img src="http://www.infinite-sols.com/...DontTouch!/soft-eng/img/bus3.jpg" width="100%" > -->
+          </div>
+          <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-9 col-lg-8 mx-auto">
+                    <h3 class="login-heading mb-4">Search Available Routes</h3>
+                    <form action="/book/find_flight/" method="get">
+                      <div class="form-label-group">
+                        <input name = "from" type="text" id="inputEmail" class="form-control" placeholder="eg. Lumley" required autofocus>
+                        <label for="inputEmail">From Location</label>
+                      </div>
+
+                      <div class="form-label-group">
+                        <input name = "to" type="text" id="inputTo" class="form-control" placeholder="eg. Regent Road" required>
+                        <label for="inputTo">To location</label>
+                      </div>
+
+
+                      <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Search</button>
+                      <div class="text-center">
+                       <h6>Administrator? <a class="small" href="http://127.0.0.1:8000/admin">Sign in</a></h6> </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
+
+  {% endblock %}

@@ -1,0 +1,40 @@
+﻿GROUP FIVE BUS RESERVATION SYSTEM
+
+
+To use this system as it is locally hosted, one must have python installed on his or her PC.
+If your Pc Does not have it install, you can go to the official website at https://www.python.org/downloads/
+select  you operating system and  download the appropriate version and get it installed 
+
+
+after that you open you preferred Integrated Development Environment (IDE) 
+for this project, I did we use Pycharm community version, but you can get other IDE's which you find comfortable for your use, 
+or you cna even use terminal for run the project if you do not want to install an IDE.
+Then navigate to the directory  on your pc where the project is, and type in the following command 
+
+“python manager.py runserver”
+
+after that the console will tell tell you that the application is nor running on the following address
+
+127.0.0.1:8000/
+
+
+The port might varies, but the address is static.
+there you go.
+
+
+copy the url and paste it into your browser  and the system will load
+consideringthe fact that we use bootstrap to make the project responsive,
+you should have a working internet to your laptop inorder to bootstrap framework
+
+ go to get https://getbootstrap.com/
+
+ for more in the framework
+
+#########################################Institute Of Public Administration and Management############################################
+###############################################BSC. INFORMATION SYSTEMS YEAR 3 #######################################################
+#####################################################SOFTWARE ENGINEERING############################################################
+############################################################GROUP 5 #################################################################
+
+
+
+

@@ -1,0 +1,24 @@
+﻿GROUP FIVE BUS RESERVATION SYSTEM
+READ ME TWO
+
+
+TO LOG IN TO THE SYSTEM 
+
+
+
+Username = ivan
+password = ivan2020
+
+You can also login  to the backend  of the  system by using
+the email address which was used when creating the super user 
+together with the above stated password "ivan2020"
+
+you can also create a new user on the console or your terminal if you are using a Mac OS or any Linux distribution
+by typing the following command 
+"python manage.py create superuser"
+this command will them prompt you to input your username
+next it will prompt you for password 
+and then prompt you to input your email address for recovery
+
+YOU CAN CREATE A SUPER USER ADMIN USING THE TERMINAL OR YOU USE THE DEFAULT ADMIN AND PASSWORD  THAT HAS BEEN CREATED
+
